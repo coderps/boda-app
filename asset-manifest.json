@@ -1,0 +1,21 @@
+{
+  "files": {
+    "main.css": "/boda-app/static/css/main.dabda764.css",
+    "main.js": "/boda-app/static/js/main.421116a0.js",
+    "static/js/787.d6743c00.chunk.js": "/boda-app/static/js/787.d6743c00.chunk.js",
+    "static/media/crop.png": "/boda-app/static/media/crop.2d9f9b6de480eb69508c.png",
+    "static/media/elephant.png": "/boda-app/static/media/elephant.768d6bfb443e76ed1998.png",
+    "static/media/saree.png": "/boda-app/static/media/saree.e85c797faf6f894169f5.png",
+    "static/media/couple.svg": "/boda-app/static/media/couple.3bf409dec8d5f7424b2311ddbe52cda3.svg",
+    "static/media/date.svg": "/boda-app/static/media/date.ba02a813149a1f07b7a60584b0249dca.svg",
+    "static/media/location.svg": "/boda-app/static/media/location.0dd2c834f8aaea0cae49561cb7cea623.svg",
+    "index.html": "/boda-app/index.html",
+    "main.dabda764.css.map": "/boda-app/static/css/main.dabda764.css.map",
+    "main.421116a0.js.map": "/boda-app/static/js/main.421116a0.js.map",
+    "787.d6743c00.chunk.js.map": "/boda-app/static/js/787.d6743c00.chunk.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.dabda764.css",
+    "static/js/main.421116a0.js"
+  ]
+}
