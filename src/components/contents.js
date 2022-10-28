@@ -10,6 +10,8 @@ import couple from './static/couple.svg';
 import elephant from './static/elephant.png';
 
 const Contents = () => {
+    const welcome_text = <h1>¡Bienvenidos a la boda de Irene y Prax!</h1>;
+
     const loc_link = "https://g.page/royalheritagehaveli?share";
     const loc_details = <>
         Royal Heritage Haveli Jaipur<br/>
@@ -30,13 +32,13 @@ const Contents = () => {
 
     const cards = <Grid container spacing={{ xs: 2, md: 3 }} columns={{ xs: 2, sm: 3, md: 12 }}>
         <Grid item xs={2} sm={4} md={4}>
-            <BasicCard content={date_time} src={date} alt="This is the date and time" />
+            <BasicCard content={date_time} src={date} alt="This is the date and time" title="Cuándo" />
         </Grid>
         <Grid item xs={2} sm={4} md={4}>
-            <BasicCard content={loc_details} src={location} alt="This is the venue" />
+            <BasicCard content={loc_details} src={location} alt="This is the venue" title="Dónde" />
         </Grid>
         <Grid item xs={2} sm={4} md={4}>
-            <BasicCard content={third_thing} src={couple} alt="Some other text" />
+            <BasicCard content={third_thing} src={couple} alt="Some other text" title="Preguntas" />
         </Grid>
     </Grid>
 
@@ -56,6 +58,8 @@ const Contents = () => {
 
     return <>
         <Header />
+        <br /><br />
+        {welcome_text}
         <br /><br />
         {cards}
         <br /><br />

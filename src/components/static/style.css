@@ -95,6 +95,10 @@ a {
     color: aqua;
 }
 
+h1 {
+    color: aliceblue;
+}
+
 pre {
     white-space: pre-wrap;
     /* Since CSS 2.1 */
