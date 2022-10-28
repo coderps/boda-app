@@ -47,6 +47,10 @@
     margin: 0 auto;
 }
 
+.join-us-form a {
+    color: blue;
+}
+
 .faqs {
     color: aliceblue;
     font-size: larger;
