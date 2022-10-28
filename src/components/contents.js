@@ -46,6 +46,7 @@ const Contents = () => {
             <CustomizedAccordions />
         </div>
     </div>
+    
 
     const googleForm = <div className='google-form'><h1>¿Vas a venir?</h1><br/><Form /></div>
     const footer = <footer>
