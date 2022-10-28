@@ -8,11 +8,13 @@ const newline = <><br /><br /></>;
 const fullWidth = {width: '100%'};
 const default_errors = {
     name: false,
+    email: false,
     name1: false,
     name2: false
 };
 const default_formData = {
     name: "",
+    email: "",
     people: "0",
     name1: '',
     name2: '',
@@ -43,9 +45,20 @@ const Form = () => {
         return d;
     };
 
+    const changeEmail = (event) => {
+        setFormData({
+            name: formData.name,
+            email: event.target.value,
+            people: formData.people,
+            ...setPeopleNames(0, formData, formData.name1),
+        });
+        areThereErrors();
+    };
+
     const changeName = (event) => {
         setFormData({
             name: event.target.value,
+            email: formData.email,
             people: formData.people,
             ...setPeopleNames(0, formData, formData.name1),
         });
@@ -55,6 +68,7 @@ const Form = () => {
     const changeNumberOfPeople = (event) => {
         setFormData({
             name: formData.name,
+            email: formData.email,
             people: String(event.target.value),
             ...setPeopleNames(0, formData, formData.name1),
         });
@@ -74,11 +88,15 @@ const Form = () => {
 
     const areThereErrors = () => {
         let flag = false;
+        if (formData.email === "") {
+            setErrors(setError("email"));
+            flag = true;
+        } else setErrors(setNoError("email"));
         if (formData.name === "") {
             setErrors(setError("name"));
             flag = true;
         } else setErrors(setNoError("name"));
-        if (formData.people) {
+        if (formData.people !== "0") {
             if (formData.name1 === "") {
                 setErrors(setError("name1"));
                 flag = true;
@@ -91,7 +109,7 @@ const Form = () => {
         return flag;
     };
 
-    const makeData = () => {
+    const makePayload = () => {
         return {
             method: 'post',
             url: 'https://sheet.best/api/sheets/5f58bab6-6249-42eb-9e82-bb6c5afa214f',
@@ -102,7 +120,7 @@ const Form = () => {
 
     const handleSubmit = () => {
         if (!areThereErrors()) {
-            axios(makeData())
+            axios(makePayload())
             .then(response => {
                 console.log(response);
                 setMessage(msg.success);
@@ -158,6 +176,17 @@ const Form = () => {
     };
 
     return <div className="join-us-form">
+        <TextField 
+            id="outlined-email" 
+            label="Email"
+            variant="outlined" 
+            required 
+            style={fullWidth} 
+            value={formData.email} 
+            onChange={changeEmail}
+            error={errors.email}
+        />
+        {newline}
         <TextField 
             id="outlined-basic" 
             label="Nombre"
