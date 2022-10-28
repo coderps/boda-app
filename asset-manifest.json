@@ -1,7 +1,7 @@
 {
   "files": {
     "main.css": "/boda-app/static/css/main.515eb9bf.css",
-    "main.js": "/boda-app/static/js/main.e8839052.js",
+    "main.js": "/boda-app/static/js/main.f63c6484.js",
     "static/js/787.d6743c00.chunk.js": "/boda-app/static/js/787.d6743c00.chunk.js",
     "static/media/crop.png": "/boda-app/static/media/crop.2d9f9b6de480eb69508c.png",
     "static/media/elephant.png": "/boda-app/static/media/elephant.768d6bfb443e76ed1998.png",
@@ -11,11 +11,11 @@
     "static/media/location.svg": "/boda-app/static/media/location.0dd2c834f8aaea0cae49561cb7cea623.svg",
     "index.html": "/boda-app/index.html",
     "main.515eb9bf.css.map": "/boda-app/static/css/main.515eb9bf.css.map",
-    "main.e8839052.js.map": "/boda-app/static/js/main.e8839052.js.map",
+    "main.f63c6484.js.map": "/boda-app/static/js/main.f63c6484.js.map",
     "787.d6743c00.chunk.js.map": "/boda-app/static/js/787.d6743c00.chunk.js.map"
   },
   "entrypoints": [
     "static/css/main.515eb9bf.css",
-    "static/js/main.e8839052.js"
+    "static/js/main.f63c6484.js"
   ]
 }
