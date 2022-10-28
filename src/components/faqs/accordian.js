@@ -25,6 +25,7 @@ const AccordionSummary = styled((props) => (
     {...props}
   />
 ))(({ theme }) => ({
+  textAlign: 'left',
   borderBottom: '1px solid rgb(100, 100, 100, 0.8)',
   backgroundColor:
     theme.palette.mode === 'dark'
